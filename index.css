@@ -1,8 +1,46 @@
 * {
     font-family: "Roboto", sans-serif;
+    overflow: hidden;
 }
 
 body {
     background-color: #1B1E1E;
     color: #ffffff;
 }   
+
+h1 {
+    width: calc(100vw / 4);
+    text-align: center;
+}
+
+.hiddenA {
+    position: absolute; 
+    left: 50%; 
+    top: -10%; 
+    transform: translate(-50%, -50%);
+	transition: 2.5s cubic-bezier(.83,0,.17,1)
+}
+
+.hiddenB {
+    position: absolute; 
+    left: 50%; 
+    top: 110%; 
+    transform: translate(-50%, -50%);
+	transition: 2.5s cubic-bezier(.83,0,.17,1)
+}
+
+.visibleA {
+    position: absolute; 
+    left: 50%; 
+    top: 47.5%; 
+    transform: translate(-50%, -50%);
+	transition: 2.5s cubic-bezier(.83,0,.17,1)
+}
+
+.visibleB {
+    position: absolute; 
+    left: 50%; 
+    top: 52.5%; 
+    transform: translate(-50%, -50%);
+	transition: 2.5s cubic-bezier(.83,0,.17,1)
+}
